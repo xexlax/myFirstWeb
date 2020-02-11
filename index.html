@@ -1,121 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<meta charset="utf-8">
-		<style>
-			.banner{
-				background-color: #6699CE;
-				color:aliceblue;
-				font-size: 90px;
-				font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
-				
-			}
-			body{
-				background:aliceblue;
-			}
-			ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#4856A9;
-}
-			li {
-    float: left;
-    border-right:1px solid #bbb;
-}
-
-			li a {
-			
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-			li:last-child {
-				float: right;
-    border-right: none;
-				border-left:1px solid #FFFFFF;
-}
-			a:hover:not(.active){
-				background-color:darkcyan;
-			}
-			.active{
-				background-color: #18165F;
-			}
-		
-			.dropdown{
-				
-			}
-			.ddcontent{
-				 display: none;
-                 position:absolute;
-                  background-color: #f9f9f9;
-                 min-width: 160px;
-				outline: 14px 16px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-				
-			}
-			.ddcontent b{
-			
-    color: black;
-    padding: 12px;
-    text-decoration: none;
-    display: block;
-
-			}
-			.ddcontent b:hover{
-				background-color: #D7D7D7;
-			}
-			.dropdown:hover .ddcontent{
-				display: block;
-			}
-			
-			.column-left{
-				float:left;
-				background: #4856A9;
-				width: 70%;
-				margin-top: 10px;
-				margin-right:0.5%;
-				overflow: hidden;
-			}
-			.column-right{
-				float:right;
-				background: #4856A9;
-				width: 29.5%;
-				margin-top: 10px;
-				
-			}
-		
-		
-		</style>
-	
-	
-	</head>
-	<body>
-		<div class="banner">heavenmade</div>
-	<ul>
-		<li><a class="active" href="untitled.jpg">
-			横空出世</a></li>
-		
-		<li><a class="dropdown" href="#1">森然巨化<div class="ddcontent"> <b href="">梦境吐息</b><b>梦境吐息</b><b>梦境吐息</b></div></a></li>
-		<li><a href="#1">漏斗蛋糕</a></li>
-		<li><a href="#1">天下第一</a></li>
-		
-		
-		</ul>
-		<div class="column-left"><p> 标签是默认是自动换行的，因此设置好宽度之后，能够较好的实现效果，但是最近的项目中发现，使用 ajax 加载数据之后，p 标签内的内容没有换行，导致布局错乱，于是尝试着使用换行样式，虽然解决了问题，但是并没有发现本质原因，本质在于，我当时获取的数据是一长串的数字，浏览器应该是对数字和英文单词处理方式相近，不会截断。 
-先给出各种方式，再具体介绍每一个属性。  。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。	</p></div>
-		<div class="column-right"> 标签是默认是自动换行的，因此设置好宽度之后，能够较好的实现效果，但是最近的项目中发现，使用 ajax 加载数据之后，p 标签内的内容没有换行，导致布局错乱，于是尝试着使用换行样式，虽然解决了问题，但是并没有发现本质原因， </div>
-	
-	
-	
-	
-	</body>
+<head>
+  <meta charset="utf-8">
+  <title>4096</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body style="background-color: aliceblue;">
+    <div class='can'>
+        <div id='banner'>4096!</div>
+        <p></p>
+        <div id='block'>
+            <div class='row'>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+            </div>
+            <div class='row'>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+            </div>
+            <div class='row'>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+            </div>
+            <div class='row'>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+                <div class='cell'></div>
+            </div>
+        </div>
+        <div id='score'>Score:0</div>
+        <div class='sign'>Powered By HTML\CSS\JavaScript<br>Xexlax 2020 future.corp</div>
 
 
 
 
+
+    </div>
+
+
+   <script src="script.js"></script>
+  
+</body>
 </html>
